@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Edit the title of the page-->
+    <title>MY MAP</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+ <style>
+      body{font-family: Helvetica, Arial; font-weight: regular; font-size: 15px; color: #CBCBCB; background-color: #333; margin: 0;}
+h1{font-weight: bold; font-size: 31px; letter-spacing: -1px; color: #FFF; line-height: 33px;}
+h3{font-weight: bold; font-size: 12px; color: #777; text-transform: uppercase; margin: 18px 0 0 0;}
+p{margin: 8px 0 20px 0; line-height: 18px;}
+a, a:visited{color: #72B6E5; text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+.wrapper{display: block; padding: 4px 30px 0 30px;}
+
+.map{background-color:#eee; position: absolute; top: 0; left: 0; bottom: 0; width: 67%; *height:100%;}
+.sidepanel{background-color:#3F55B9; position: absolute; top: 0; right: 0; bottom: 0; width: 33%; height: 100%; overflow: auto;}
+
+.context{font-family: Helvetica, Arial; font-size: 13px; color: #999; padding: 10px 0 0 0;}
+.subheader{border-bottom: 1px solid #555;}
+.footer{border-top: 1px solid #555; margin-top: 30px;}
+.titleBlock{text-align: right;}
+      </style>
+    
+    </head>
+    
+    
+  <body>
+
+    <div class="map" id="map"></div>
+
+    <div class="sidepanel">
+      <div class="wrapper">
+        <div class="context subheader">
+          <p>Map created by <a href="#">{Link to your website}</a></p>
+        </div>
+        <h1>MY MAP</h1>
+        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+
+        <!--Copy and paste the div below for creating content blocks-->
+        <h3>Description</h3>
+        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+
+        <h3>Sources</h3>
+        <p>blah blah blah blah blah  <a href="#">blah blah blah blah blah <a href="#">exhilarating</a> blah blah blah blah blah </p>
+
+        <div class="context footer">
+          <p>FOOTER <a href="http://cartodb.com">link</a></p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3.8"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <script type="text/javascript">
+      cartodb.createVis('map', 'https://thawj529.cartodb.com/api/v2/viz/f0c954e6-e31c-11e5-b98a-0e674067d321/viz.json');
+    </script>
+
+  </body>
+      </html>

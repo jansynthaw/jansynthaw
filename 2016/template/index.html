@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!--Edit the title of the page-->
-    <title>MY MAP</title>
+    <title>The Impact of Solarize Campaigns</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,22 +11,34 @@
     <link rel="stylesheet" href="css/dark-theme.css">
     <link rel="stylesheet" href="css/makeitresponsive.css">
  <style>
-      body{font-family: Helvetica, Arial; font-weight: regular; font-size: 15px; color: #CBCBCB; background-color: #333; margin: 0;}
+      body{font-family: Helvetica, Arial; font-weight: regular; font-size: 15px; color: #addef3; background-color: #333; margin: 0;}
 h1{font-weight: bold; font-size: 31px; letter-spacing: -1px; color: #FFF; line-height: 33px;}
-h3{font-weight: bold; font-size: 12px; color: #777; text-transform: uppercase; margin: 18px 0 0 0;}
+h3{font-weight: bold; font-size: 12px; color: #3f538a; text-transform: uppercase; margin: 18px 0 0 0;}
 p{margin: 8px 0 20px 0; line-height: 18px;}
-a, a:visited{color: #72B6E5; text-decoration: none;}
+a, a:visited{color: #E0FAE9; text-decoration: none;}
 a:hover{text-decoration: underline;}
 
 .wrapper{display: block; padding: 4px 30px 0 30px;}
 
 .map{background-color:#eee; position: absolute; top: 0; left: 0; bottom: 0; width: 67%; *height:100%;}
-.sidepanel{background-color:#3F55B9; position: absolute; top: 0; right: 0; bottom: 0; width: 33%; height: 100%; overflow: auto;}
+.sidepanel{background-color:#00b185; position: absolute; top: 0; right: 0; bottom: 0; width: 33%; height: 100%; overflow: auto;}
 
-.context{font-family: Helvetica, Arial; font-size: 13px; color: #999; padding: 10px 0 0 0;}
+.context{font-family: Helvetica, Arial; font-size: 13px; color: #addef3; padding: 10px 0 0 0;}
 .subheader{border-bottom: 1px solid #555;}
 .footer{border-top: 1px solid #555; margin-top: 30px;}
+.map-layer-selection{//******************//}
 .titleBlock{text-align: right;}
+     
+#date-range-picker-container.narrow-sidebar {
+    right: 35%;
+    z-index: 2000;
+}
+#date-range-picker-container {
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+}
       </style>
     
     </head>
@@ -34,25 +46,66 @@ a:hover{text-decoration: underline;}
     
   <body>
 
-    <div class="map" id="map"></div>
+    <div class="map" id="map">
+      <div id="date-range-picker-container" class="visible-sidebar-closed visible-sidebar-narrow hidden-sidebar-wide hidden-sidebar-widest narrow-sidebar">
+        <div id="date-range-picker" class="ui-rangeSlider ui-rangeSlider-noArrow ui-dateRangeSlider" style="position: relative;">
+        <div class="ui-rangeSlider-container" style="position: absolute; width: 541px;"><div class="ui-rangeSlider-innerBar" style="position: absolute; top: 0px; left: 0px; width: 529px;"></div>
+        <div class="ui-rangeSlider-bar" style="position: absolute; top: 0px; width: 238.317px; left: 235.606px;"></div>
+    <div class="ui-rangeSlider-handle ui-rangeSlider-leftHandle" style="position: absolute; top: 0px; left: 235.605px;">
+        <div class="ui-rangeSlider-handle-inner"></div></div>
+        <div class="ui-rangeSlider-handle ui-rangeSlider-rightHandle" style="position: absolute; top: 0px; left: 453.922px;">
+        <div class="ui-rangeSlider-handle-inner"></div></div></div>
+    <div class="ui-rangeSlider-arrow ui-rangeSlider-leftArrow" style="position: absolute; left: 0px; display: none;">
+        <div class="ui-rangeSlider-arrow-inner"></div></div>
+    <div class="ui-rangeSlider-arrow ui-rangeSlider-rightArrow" style="position: absolute; right: 0px; display: none;">
+        <div class="ui-rangeSlider-arrow-inner"></div></div>
+    <div class="ui-rangeSlider-label ui-rangeSlider-leftLabel" style="position: absolute; display: block; right: 261.406px;"><div class="ui-rangeSlider-label-value">1979</div>
+        <div class="ui-rangeSlider-label-inner"></div></div>
+    <div class="ui-rangeSlider-label ui-rangeSlider-rightLabel" style="position: absolute; display: block; right: 43.0938px;"><div class="ui-rangeSlider-label-value">2007</div><div class="ui-rangeSlider-label-inner"></div></div></div>
+            <div id="date-range-picker-label">
+                Year Adopted
+            </div>
+        </div>
+      </div>
 
     <div class="sidepanel">
       <div class="wrapper">
         <div class="context subheader">
-          <p>Map created by <a href="#">{Link to your website}</a></p>
+          <p>Map created by <a href="https://github.com/jansynthaw">Jansyn Thaw</a></p>
         </div>
-        <h1>MY MAP</h1>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        <h1>The Impact of NYSERDA's Solarize Campaigns on the Cost of Going Solar</h1>
+        <p>The purpose of this map is to identify the impact of group purchasing models for residential solar-energy systems in New York State. Group purchasing campaigns—as well as streamlined solar permitting—may decrease the cost to consumer to install solar technology and may aid in the entry of solar into underserved, lower income communities. The map will also help identify areas of opportunity for new Solarize Campaigns. For more information about group solar purchasing campaigns, please visit <a href="http://www.nyserda.ny.gov/All-Programs/Programs/NY-Sun/Communities/Shared-Solar">NYSERDA's website </a>.</p>
 
         <!--Copy and paste the div below for creating content blocks-->
-        <h3>Description</h3>
-        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        <h3>Layers</h3>
+        <p>
+          <ul>
+          <li>
+              Average Price Per Watt ($/Watt) for residential installs (by county, for the year 2015)
+          </li>
+          <li>
+            Solarize Campaign Locations (by city or county)
+          </li>
+          <li>
+              Average $/Watt in Solarize Campaign Locations
+          </li>
+          <li>
+          Cities where PACE financing and unified solar permitting has been adopted 
+          </li>
+          <li>
+              Census block groups where over 51% of households are Low or Moderate Income (LMI) </li>
+          </ul>
+          </p>
 
         <h3>Sources</h3>
-        <p>blah blah blah blah blah  <a href="#">blah blah blah blah blah <a href="#">exhilarating</a> blah blah blah blah blah </p>
+        <p> NY Open Data, Sustainable CUNY, Energize NY, Department of Housing and Urban Development <a href="#"> (link to each data set) <a href="#">#</a> </p>
 
         <div class="context footer">
-          <p>FOOTER <a href="http://cartodb.com">link</a></p></p>
+            <div class = "map-layer-selection" >
+                <input id="dollar_per_watt" type="checkbox" class="map-layer-selection" />
+                <label for="dollar_per_watt">Dollar Per Watt</label>
+                 </div>
+          <p>Additional Info <a href="http://cartodb.com">link?</a></p></p>
         </div>
       </div>
     </div>
@@ -60,7 +113,7 @@ a:hover{text-decoration: underline;}
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3.8"></script>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
     <script type="text/javascript">
-      cartodb.createVis('map', 'https://thawj529.cartodb.com/api/v2/viz/f0c954e6-e31c-11e5-b98a-0e674067d321/viz.json');
+      cartodb.createVis('map','https://thenewschool.cartodb.com/u/jansynthaw/api/v2/viz/348f3bfa-fda8-11e5-835d-0e3ff518bd15/viz.json');
     </script>
 
   </body>
